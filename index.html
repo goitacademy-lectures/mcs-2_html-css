@@ -7,28 +7,36 @@
     <title>Simply Chocolate</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="./images/icons/logo.svg" type="image/svg" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Critical css -->
+    <!-- <style>
+      a {
+        color: lightblue;
+      }
+    </style> -->
   </head>
   <body>
     <!-- Header -->
-    <header id="home">
+    <header class="header" id="home">
       <nav>
         <a href="">
           <span>SIMPLY</span> CHOCOLATE
           <img src="./images/icons/logo.svg" alt="Simply Chocolate logo" />
         </a>
-        <ul>
+        <ul class="list">
           <li>
-            <a href="#home">Home</a>
+            <a class="header-link" href="#home">Home</a>
           </li>
           <li>
-            <a href="#made">How it’s made?</a>
+            <a class="header-link" href="#made">How it’s made?</a>
           </li>
           <li>
-            <a href="#reviews">Chocolate is loved</a>
+            <a class="header-link" href="#reviews">Chocolate is loved</a>
           </li>
         </ul>
       </nav>
-      <ul>
+      <ul class="list">
         <li>
           <a
             href="https://facebook.com"
@@ -63,7 +71,7 @@
     </header>
     <main>
       <!-- Hero section -->
-      <section>
+      <section class="hero" id="hero">
         <h1>
           Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
         </h1>
@@ -75,29 +83,34 @@
         </button>
       </section>
       <!--  Benefits section -->
-      <section>
-        <h2>Benefits of our chocolate</h2>
-        <ul>
-          <li>
-            <h3>Unsurpassed taste</h3>
-            <p>
+      <section class="benefits">
+        <h2 class="benefits-title">Benefits of our chocolate</h2>
+        <p class="benefits-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia obcaecati voluptates
+          repudiandae earum nam ea dolores nisi eos? Asperiores ab aperiam, ipsum repudiandae
+          quisquam neque non reprehenderit minus laborum distinctio?
+        </p>
+        <ul class="benefits-list list">
+          <li class="benefits-item">
+            <h3 class="benefits-subtitle">Unsurpassed taste</h3>
+            <p class="benefits-text">
               Crafted with the finest quality cocoa beans and a dedication to perfection, each bite
               is a decadent experience that simply cannot be matched. Savor the richness and
               complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
             </p>
           </li>
-          <li>
-            <h3>Affordable price</h3>
-            <p>
+          <li class="benefits-item">
+            <h3 class="benefits-subtitle">Affordable price</h3>
+            <p class="benefits-text">
               Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's
               selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate
               bars without sacrificing taste or quality. Browse our selection and indulge in
               affordable luxury today.
             </p>
           </li>
-          <li>
-            <h3>Own production</h3>
-            <p>
+          <li class="benefits-item">
+            <h3 class="benefits-subtitle">Own production</h3>
+            <p class="benefits-text">
               We take pride in our own production process, ensuring that every step is carefully
               crafted to perfection. From selecting the finest ingredients to handcrafting each
               piece, our attention to detail is evident in every bite.
@@ -106,9 +119,9 @@
         </ul>
       </section>
       <!-- Ingridients section -->
-      <section>
+      <section class="ingridients">
         <h2>It all adds up to one exceptional <span>taste</span> sensation</h2>
-        <ul>
+        <ul class="ingridients-list list">
           <li>
             <img
               src="./images/ingridients/img-1.png"
@@ -150,11 +163,11 @@
         </ul>
       </section>
       <!-- Made section -->
-      <section id="made">
+      <section class="made" id="made">
         <h2>How it’s <span>made</span>?</h2>
         <img src="./images/made/img.jpg" alt="Chocolate making process" widht="600" height="400" />
         <h3>Try our chocolates today and discover the perfect balance of flavor</h3>
-        <ol>
+        <ol class="list">
           <li>
             Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
           </li>
@@ -173,7 +186,7 @@
       <!-- Products section -->
       <section>
         <h2>Our <span>products</span></h2>
-        <ul>
+        <ul class="list">
           <li>
             <img src="./images/products/img-1.jpg" alt="" width="230" height="201" />
             <h3>Orange </h3>
@@ -227,7 +240,7 @@
       <!-- Bestsellers section -->
       <section>
         <h2><span>Top</span> sellers</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img src="./images/bestsellers/img-1.jpg" alt="" width="368" height="464" />
             <h3>CHOCOLATE WITH NUTS</h3>
@@ -245,7 +258,7 @@
       <!-- Reviews section -->
       <section id="reviews">
         <h2><span>Chocolate</span> is loved</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/reviews/img-1.png"
@@ -284,7 +297,7 @@
       <p>Chocolate a delicious cure for a bad day</p>
       <address>
         <p>Social networks</p>
-        <ul>
+        <ul class="list">
           <li>
             <a
               href="https://instagram.com"
@@ -332,7 +345,7 @@
           </li>
         </ul>
         <p>Contact us</p>
-        <ul>
+        <ul class="list">
           <li>
             <a href="tel:380684439426">+380 (68) 443-94-26</a>
           </li>
@@ -341,7 +354,7 @@
           </li>
         </ul>
       </address>
-      <ul>
+      <ul class="list">
         <li>
           <a href="#home">Home</a>
         </li>

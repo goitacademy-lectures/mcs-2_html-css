@@ -1,0 +1,56 @@
+/**
+  |============================
+  | Base styles
+  |============================
+*/
+body {
+  font-family: sans-serif;
+  color: #111111;
+}
+/* reset styles */
+.list {
+  list-style: none;
+}
+.link {
+}
+/**
+  |============================
+  | Header styles
+  |============================
+*/
+.header {
+}
+.header-link {
+}
+.header-link:hover,
+.header-link:focus {
+}
+
+/**
+  |============================
+  | Benefits styles
+  |============================
+*/
+.benefits {
+}
+.benefits-title {
+}
+.benefits-description {
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-subtitle {
+}
+.benefits-text {
+}
+/**
+  |============================
+  | Ingridients styles
+  |============================
+*/
+.ingridients {
+}
+.ingridients-list {
+}
