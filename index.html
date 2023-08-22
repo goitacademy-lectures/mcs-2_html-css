@@ -14,6 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
       rel="stylesheet"
     />
+    <!-- Modern normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -77,17 +85,19 @@
       <!-- Hero section -->
       <section class="hero" id="hero">
         <h1 class="hero-title">
-          Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
+          Treat yourself or a loved one to our&nbsp;finest ingredients for a moment of pure delight!
         </h1>
         <button class="btn btn-accent" type="button">Buy now</button>
         <button class="btn btn-primary" type="button">How it’s made</button>
         <button class="btn hero-btn" type="button">
           scroll down
-          <img src="./images/icons/arrow.svg" alt="Arrow down" width="22" height="22" />
+          <span class="hero-btn-icon">
+            <img src="./images/icons/arrow.svg" alt="Arrow down" width="22" height="22" />
+          </span>
         </button>
       </section>
       <!--  Benefits section -->
-      <section class="benefits" id="benefits">
+      <section class="benefits section" id="benefits">
         <h2 class="section-title" hidden>Benefits of our chocolate</h2>
         <ul class="benefits-list list">
           <li class="benefits-item">
