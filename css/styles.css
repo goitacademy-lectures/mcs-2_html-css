@@ -3,19 +3,18 @@
   --main-font: Montserrat, sans-serif;
   /* Colors */
   --main-cl: #111111;
-  --primary-cl: rgba(17, 17, 17, 0.7);
-  --primary-cl: rgba(17, 17, 17, 0.4);
-  --primary-cl: rgba(17, 17, 17, 0.1);
+  --main-cl-10: rgba(17, 17, 17, 0.1);
+  --main-cl-40: rgba(17, 17, 17, 0.4);
+  --main-cl-60: rgba(17, 17, 17, 0.6);
+  --main-cl-70: rgba(17, 17, 17, 0.7);
   --accent-cl: #fd9222;
-  --light-cl: #fffff;
-  --light-cl: rgba(255, 255, 255, 0.1);
-  --secondary-cl: rgba(255, 255, 255, 0.7);
+  --light-cl: #ffffff;
+  --light-cl-10: rgba(255, 255, 255, 0.1);
+  --light-cl-70: rgba(255, 255, 255, 0.7);
   --dark-cl: #1e1823;
 
   --main-bg-cl: #fafafa;
-  --light-bg-cl: rgba(17, 17, 17, 0.6);
-  --dark-bg-cl: #1e1823;
-  --beige-bg-cl: #fcf1e0;
+  --beige-cl: #fcf1e0;
   /* Radius */
 
   /* Other */
@@ -30,13 +29,6 @@ body {
   font-family: var(--main-font);
   color: var(--main-cl);
   background-color: var(--main-bg-cl);
-
-  /* Default styles */
-  /* font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: normal;
-  line-height: 1.2; */
 }
 /* reset styles start */
 address {
@@ -72,6 +64,10 @@ img {
 }
 .btn-secondary {
   font-size: 18px;
+  background-color: transparent;
+}
+.btn-dark {
+  color: var(--main-cl);
   background-color: transparent;
 }
 .section-title {
@@ -132,17 +128,17 @@ img {
   |============================
 */
 .hero {
-  background-color: rgba(17, 17, 17, 0.7);
+  background-color: var(--main-cl-70);
 }
 .hero-title {
-  color: #fff;
+  color: var(--light-cl);
   font-size: 28px;
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.03em;
 }
 .hero-btn {
-  color: #fff;
+  color: var(--light-cl);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.28;
@@ -155,7 +151,7 @@ img {
   |============================
 */
 .benefits {
-  background-color: #1e1823;
+  background-color: var(--dark-cl);
 }
 .benefits-title {
 }
@@ -164,12 +160,12 @@ img {
 .benefits-item {
 }
 .benefits-subtitle {
-  color: #fff;
+  color: var(--light-cl);
   font-size: 18px;
   font-weight: 600;
 }
 .benefits-text {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--light-cl-70);
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -249,14 +245,14 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
-  color: var(--additional-cl);
+  color: var(--main-cl-70);
 }
 .products-list-price {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
 
-  background-color: var(--body-bg-cl);
+  background-color: var(--main-cl-10);
 }
 
 /**
@@ -310,7 +306,7 @@ img {
   line-height: 1.29;
   text-align: center;
   letter-spacing: -0.02em;
-  color: var(--additional-cl);
+  color: var(--light-cl-70);
 }
 
 /**
@@ -319,7 +315,7 @@ img {
   |============================
 */
 .footer {
-  background-color: var(--dark-bg-cl);
+  background-color: var(--dark-cl);
 }
 .footer-slogan {
   font-weight: 500;
