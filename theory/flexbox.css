@@ -1,0 +1,59 @@
+/**
+  |============================
+  | Flexbox properties
+  |============================
+*/
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+
+  /* justify-content: space-between; */
+
+  /* Default properties */
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  /* align-items: stretch; */
+  /* flex-wrap: nowrap; */
+}
+
+.flex-element {
+  /* flex-basis: calc((100% - 28px * 3) / 4); */
+  width: calc((100% - 28px * 3) / 4);
+
+  /* Default properties */
+  /* flex-basis: auto;
+  /* flex-shrink: 1;
+  flex-grow: 0; */
+}
+
+/**
+  |============================
+  | Flexbox grid
+  |============================
+*/
+:root {
+}
+.card-set {
+}
+.card-set-item {
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.team-item {
+  width: calc((100% - 50px * 2) / 3);
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery-item {
+  width: calc((100% - 10px * 7) / 8);
+}
