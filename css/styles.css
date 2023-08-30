@@ -32,7 +32,11 @@ body {
   font-family: var(--main-font);
   color: var(--main-cl);
   background-color: var(--main-bg-cl);
+
+  /* Pattern image */
+  /* background-image: url('data:image/svg+xml,%3Csvg width="52" height="26" viewBox="0 0 52 26" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z" /%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); */
 }
+
 /* reset styles start */
 h1,
 h2,
@@ -211,8 +215,17 @@ img {
 
   border-radius: 10px;
   border: 1px solid var(--main-cl-10);
+  color: #111111;
+}
+.header-socials-link:hover,
+.header-socials-link:focus {
+  color: #fd9222;
+  border-color: #fd9222;
 }
 
+.header-socials-icon {
+  fill: currentColor;
+}
 /**
   |============================
   | Hero styles
@@ -228,6 +241,11 @@ img {
 
   border-radius: 30px;
   background-color: var(--main-cl-70);
+  background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+    url('../images/hero/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   width: 484px;
@@ -507,6 +525,7 @@ img {
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   background-color: var(--light-cl);
+  box-shadow: 0px 9px 100px 0px rgba(17, 17, 17, 0.03);
 }
 .reviews-list-avatar {
   margin: 0 auto;
