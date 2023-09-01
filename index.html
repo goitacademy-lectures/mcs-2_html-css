@@ -105,7 +105,9 @@
             <button class="btn hero-btn" type="button">
               scroll down
               <span class="hero-btn-icon">
-                <img src="./images/icons/arrow.svg" alt="Arrow down" width="22" height="22" />
+                <svg class="hero-btn-icon-arrow" width="22" height="22">
+                  <use href="./images/sprite.svg#arrow"></use>
+                </svg>
               </span>
             </button>
           </div>
@@ -117,6 +119,11 @@
           <h2 class="section-title visually-hidden">Benefits of our chocolate</h2>
           <ul class="benefits-list list">
             <li class="benefits-item">
+              <div class="benefits-thumb">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/sprite.svg#chocolate"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Unsurpassed taste</h3>
               <p class="benefits-text">
                 Crafted with the finest quality cocoa beans and a dedication to perfection, each
@@ -125,6 +132,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefits-thumb">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/sprite.svg#coin"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Affordable price</h3>
               <p class="benefits-text">
                 Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's
@@ -134,6 +146,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefits-thumb">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/sprite.svg#spoon"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Own production</h3>
               <p class="benefits-text">
                 We take pride in our own production process, ensuring that every step is carefully
@@ -153,6 +170,9 @@
           </h2>
           <ul class="ingridients-list list">
             <li class="ingridients-list-item">
+              <svg class="ingridients-list-icon" width="24" height="24">
+                <use href="./images/sprite.svg#arrow-right"></use>
+              </svg>
               <img
                 class="ingridients-list-img"
                 src="./images/ingridients/img-1.png"
@@ -163,6 +183,9 @@
               <h3 class="ingridients-list-caption">MILK CHOCOLATE</h3>
             </li>
             <li class="ingridients-list-item">
+              <svg class="ingridients-list-icon" width="24" height="24">
+                <use href="./images/sprite.svg#arrow-right"></use>
+              </svg>
               <img
                 class="ingridients-list-img"
                 src="./images/ingridients/img-2.png"
@@ -173,6 +196,9 @@
               <h3 class="ingridients-list-caption">MILK</h3>
             </li>
             <li class="ingridients-list-item">
+              <svg class="ingridients-list-icon" width="24" height="24">
+                <use href="./images/sprite.svg#arrow-right"></use>
+              </svg>
               <img
                 class="ingridients-list-img"
                 src="./images/ingridients/img-3.png"
@@ -183,6 +209,9 @@
               <h3 class="ingridients-list-caption">NUTS</h3>
             </li>
             <li class="ingridients-list-item">
+              <svg class="ingridients-list-icon" width="24" height="24">
+                <use href="./images/sprite.svg#arrow-right"></use>
+              </svg>
               <img
                 class="ingridients-list-img"
                 src="./images/ingridients/img-4.png"
@@ -193,6 +222,9 @@
               <h3 class="ingridients-list-caption">SEMI - SWEET CHOCOLATE</h3>
             </li>
             <li class="ingridients-list-item">
+              <svg class="ingridients-list-icon" width="24" height="24">
+                <use href="./images/sprite.svg#arrow-right"></use>
+              </svg>
               <img
                 class="ingridients-list-img"
                 src="./images/ingridients/img-5.png"
@@ -203,6 +235,9 @@
               <h3 class="ingridients-list-caption">CACAO</h3>
             </li>
             <li class="ingridients-list-item">
+              <svg class="ingridients-list-icon" width="24" height="24">
+                <use href="./images/sprite.svg#arrow-right"></use>
+              </svg>
               <img
                 class="ingridients-list-img"
                 src="./images/ingridients/img-6.png"
@@ -213,6 +248,9 @@
               <h3 class="ingridients-list-caption">RASPBERRY</h3>
             </li>
             <li class="ingridients-list-item">
+              <svg class="ingridients-list-icon" width="24" height="24">
+                <use href="./images/sprite.svg#arrow-right"></use>
+              </svg>
               <img
                 class="ingridients-list-img"
                 src="./images/ingridients/img-7.png"
@@ -232,13 +270,20 @@
             How it’s <span class="section-title-accent">made</span>?
           </h2>
           <div class="made-wrapper">
-            <img
-              class="made-pic"
-              src="./images/made/img.jpg"
-              alt="The process of making chocolate by a chef"
-              width="600"
-              height="400"
-            />
+            <div class="made-thumb">
+              <img
+                class="made-pic"
+                src="./images/made/img.jpg"
+                alt="The process of making chocolate by a chef"
+                width="600"
+                height="400"
+              />
+              <button class="made-play-btn" type="button">
+                <svg class="made-icon" width="44" height="44">
+                  <use href="./images/sprite.svg#play"></use>
+                </svg>
+              </button>
+            </div>
             <div class="made-right-side">
               <h3 class="made-subtitle">
                 Try our chocolates today and discover the perfect balance of flavor
@@ -389,6 +434,13 @@
                   width="368"
                   height="464"
                 />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Chocolate with fruit is an unbeatable combination of two of the tastiest things
+                    in the world. This dessert combines delicate and aromatic chocolate with fresh
+                    and juicy fruits, creating a true poetry of taste.
+                  </p>
+                </div>
               </div>
               <div class="bestsellers-wrapper">
                 <h3 class="bestsellers-list-caption">CHOCOLATE WITH NUTS</h3>
@@ -475,7 +527,19 @@
               </p>
             </li>
           </ul>
-          <button class="reviews-btn btn btn-dark" type="button">Leave a review</button>
+          <button class="reviews-btn btn btn-dark" type="button" data-modal-open>
+            Leave a review
+          </button>
+
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-btn" type="button" data-modal-close>
+                <svg class="modal-btn-icon" width="28" height="28">
+                  <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -499,13 +563,9 @@
                     rel="noopener noreferrer"
                     aria-label="Instagram icon"
                   >
-                    <img
-                      class="socials-icon"
-                      src="./images/icons/icon-instagram.svg"
-                      alt="Instagram icon"
-                      width="24"
-                      height="24"
-                    />
+                    <svg class="socials-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="socials-item">
@@ -516,13 +576,9 @@
                     rel="noopener noreferrer"
                     aria-label="Facebook icon"
                   >
-                    <img
-                      class="socials-icon"
-                      src="./images/icons/icon-facebook.svg"
-                      alt="Facebook icon"
-                      width="24"
-                      height="24"
-                    />
+                    <svg class="socials-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
                   </a>
                 </li>
                 <li class="socials-item">
@@ -533,13 +589,9 @@
                     rel="noopener noreferrer"
                     aria-label="Twitter icon"
                   >
-                    <img
-                      class="socials-icon"
-                      src="./images/icons/icon-twitter.svg"
-                      alt="Twitter icon"
-                      width="24"
-                      height="24"
-                    />
+                    <svg class="socials-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
                   </a>
                 </li>
               </ul>
@@ -574,5 +626,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
