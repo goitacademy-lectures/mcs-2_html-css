@@ -17,7 +17,7 @@
     </symbol>
     <!-- Hero icons -->
     <symbol id="arrow" viewBox="0 0 32 32">
-      <path fill="#fd9222" d="M16.905 17.786a1.268 1.268 0 0 1-1.395.279 1.297 1.297 0 0 1-.415-.279l-5.841-5.854a1.28 1.28 0 0 0-1.395-.279 1.273 1.273 0 0 0-.415 2.077l5.854 5.854a3.824 3.824 0 0 0 5.408 0l5.854-5.854a1.277 1.277 0 0 0-1.81-1.799l-5.841 5.854z" style="fill:var(--color2, #fd9222)"/>
+      <path  d="M16.905 17.786a1.268 1.268 0 0 1-1.395.279 1.297 1.297 0 0 1-.415-.279l-5.841-5.854a1.28 1.28 0 0 0-1.395-.279 1.273 1.273 0 0 0-.415 2.077l5.854 5.854a3.824 3.824 0 0 0 5.408 0l5.854-5.854a1.277 1.277 0 0 0-1.81-1.799l-5.841 5.854z" />
     </symbol>
     <!-- Benefits icons -->
     <symbol id="chocolate" viewBox="0 0 32 32">
@@ -32,8 +32,17 @@
       <path fill="#fd9222" d="M15.451 14.106a5.154 5.154 0 0 1-1.177-3.282c0-4.324 5.181-8.642 10.362-8.642a5.183 5.183 0 0 1 5.181 5.182c0 5.182-4.318 10.364-8.646 10.364a5.151 5.151 0 0 1-3.281-1.177L5.132 29.312a1.73 1.73 0 0 1-2.445-2.445l12.764-12.761z" style="fill:var(--color2, #fd9222)"/>
     </symbol>
     <!-- Ingridients iocns -->
-    <symbol id="arrow-left" viewBox="0 0 32 32">
+    <symbol id="arrow-right" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333" d="M9.143 16h13.714m0 0-3.429-3.429M22.857 16l-3.429 3.429M16 30.857c8.205 0 14.857-6.652 14.857-14.857S24.205 1.143 16 1.143C7.795 1.143 1.143 7.795 1.143 16S7.795 30.857 16 30.857z"/>
+    </symbol>
+    <symbol id="play" viewBox="0 0 32 32">
+      <path d="M10.909 24v-15.273l14.545 7.636-14.545 7.636z" />
+      <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7273" d="M31.636 16c0 8.636-7.001 15.636-15.636 15.636s-15.636-7.001-15.636-15.636c0-8.636 7.001-15.636 15.636-15.636s15.636 7.001 15.636 15.636z" />
+    </symbol>
+
+    <symbol id="icon-close" viewBox="0 0 28 28" fill="none">
+      <path d="M21 7L7 21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M7 7L21 21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
   </defs>
 </svg>
