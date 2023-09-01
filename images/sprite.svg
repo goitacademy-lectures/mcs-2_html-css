@@ -36,8 +36,8 @@
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333" d="M9.143 16h13.714m0 0-3.429-3.429M22.857 16l-3.429 3.429M16 30.857c8.205 0 14.857-6.652 14.857-14.857S24.205 1.143 16 1.143C7.795 1.143 1.143 7.795 1.143 16S7.795 30.857 16 30.857z"/>
     </symbol>
     <symbol id="play" viewBox="0 0 32 32">
-      <path d="M10.909 24v-15.273l14.545 7.636-14.545 7.636z" />
-      <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7273" d="M31.636 16c0 8.636-7.001 15.636-15.636 15.636s-15.636-7.001-15.636-15.636c0-8.636 7.001-15.636 15.636-15.636s15.636 7.001 15.636 15.636z" />
+      <path fill="#f5f4f4" d="M10.909 24v-15.273l14.545 7.636-14.545 7.636z" />
+      <path fill="none" stroke="#f5f4f4" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7273" d="M31.636 16c0 8.636-7.001 15.636-15.636 15.636s-15.636-7.001-15.636-15.636c0-8.636 7.001-15.636 15.636-15.636s15.636 7.001 15.636 15.636z" />
     </symbol>
 
     <symbol id="icon-close" viewBox="0 0 28 28" fill="none">

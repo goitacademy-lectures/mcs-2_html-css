@@ -14,6 +14,7 @@
   --light-cl-50: rgba(255, 255, 255, 0.5);
   --light-cl-70: rgba(255, 255, 255, 0.7);
   --dark-cl: #1e1823;
+  --dark-gray-cl: #1e1823;
 
   --main-bg-cl: #fafafa;
   --beige-cl: #fcf1e0;
@@ -477,14 +478,12 @@ img {
   background-color: transparent;
   cursor: pointer;
 }
-.made-icon {
-  fill: #f5f4f4;
-  stroke: #f5f4f4;
+.made-play-icon {
 }
 .made-right-side {
   padding: 32px;
   border-radius: 15px;
-  background: #fff;
+  background-color: var(--light-cl);
 }
 .made-subtitle {
   width: 350px;
@@ -510,10 +509,9 @@ img {
   height: 8px;
   margin-top: 5px;
 
-  background-color: #4c4c4c;
+  background-color: var(--dark-gray-cl);
   border: 1px solid #eceded;
   border-radius: 50%;
-  /* background-image: url(../images/icons/marker.svg); */
 }
 /**
   |============================
@@ -666,7 +664,7 @@ img {
   border-radius: 15px;
   border: 1px solid var(--main-cl-10);
   background-color: var(--light-cl);
-  box-shadow: 0px 9px 100px 0px rgba(17, 17, 17, 0.03);
+  box-shadow: 0px 9px 100px rgba(17, 17, 17, 0.03);
 }
 .reviews-list-avatar {
   margin: 0 auto;
@@ -697,13 +695,11 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  /* right: 0;
-  bottom: 0; */
 
   width: 100%;
   height: 100%;
 
-  background: rgba(46, 47, 66, 0.4);
+  background-color: var(--main-cl-40);
 
   opacity: 1;
   visibility: visible;
