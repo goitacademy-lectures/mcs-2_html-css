@@ -531,13 +531,76 @@
             Leave a review
           </button>
 
-          <div class="backdrop is-hidden" data-modal>
+          <div class="backdrop" data-modal>
             <div class="modal">
               <button class="modal-btn" type="button" data-modal-close>
                 <svg class="modal-btn-icon" width="28" height="28">
                   <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
               </button>
+              <p class="modal-caption">
+                LEAVE A REVIEW ABOUT <span class="modal-caption-accent">OUR CHOCOLATE</span>
+              </p>
+              <!-- <strong class="modal-caption">
+                LEAVE A REVIEW ABOUT <span class="modal-caption-accent">OUR CHOCOLATE</span>
+              </strong> -->
+
+              <form class="modal-form" name="reviews-form">
+                <label class="modal-form-label" for="user-name">Name</label>
+                <div class="modal-form-field">
+                  <input class="modal-form-input" type="text" name="user-name" id="user-name" />
+                  <svg class="modal-form-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-user"></use>
+                  </svg>
+                </div>
+
+                <label class="modal-form-label" for="user-email">Email</label>
+                <div class="modal-form-field">
+                  <input class="modal-form-input" type="email" name="user-email" id="user-email" />
+                  <svg class="modal-form-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-email"></use>
+                  </svg>
+                </div>
+
+                <label class="modal-form-label" for="user-phone">Phone number</label>
+                <div class="modal-form-field">
+                  <input class="modal-form-input" type="tel" name="user-phone" id="user-phone" />
+                  <svg class="modal-form-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
+
+                <label class="modal-form-label" for="user-comment">Comment</label>
+                <textarea
+                  class="modal-form-comment"
+                  name="user-comment"
+                  id="user-comment"
+                  rows="4"
+                  placeholder="Enter text"
+                ></textarea>
+
+                <label class="modal-form-agreement">
+                  <input type="checkbox" name="user-agreement" />
+                  <span class="modal-form-checkbox">
+                    <svg class="modal-form-checkbox-icon" width="20" height="20">
+                      <use href=""></use>
+                    </svg>
+                  </span>
+                  <span class="modal-form-agreement-desc">
+                    I accept the terms and conditions of the
+                    <a
+                      class="modal-form-agreement-link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Privacy Policy
+                    </a>
+                  </span>
+                </label>
+
+                <button class="btn btn-accent" type="submin">Send</button>
+              </form>
             </div>
           </div>
         </div>
@@ -628,5 +691,6 @@
     </footer>
 
     <script src="./js/modal.js" type="module"></script>
+    <!-- <script src="./js/form.js" type="module"></script> -->
   </body>
 </html>
