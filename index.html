@@ -455,6 +455,13 @@
                   width="368"
                   height="464"
                 />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Chocolate with fruit is an unbeatable combination of two of the tastiest things
+                    in the world. This dessert combines delicate and aromatic chocolate with fresh
+                    and juicy fruits, creating a true poetry of taste.
+                  </p>
+                </div>
               </div>
               <div class="bestsellers-wrapper">
                 <h3 class="bestsellers-list-caption">CHOCOLATE WITH FRUITS</h3></div
@@ -469,6 +476,13 @@
                   width="368"
                   height="464"
                 />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Chocolate with fruit is an unbeatable combination of two of the tastiest things
+                    in the world. This dessert combines delicate and aromatic chocolate with fresh
+                    and juicy fruits, creating a true poetry of taste.
+                  </p>
+                </div>
               </div>
               <div class="bestsellers-wrapper">
                 <h3 class="bestsellers-list-caption">DARK CHOCOLATE</h3>
@@ -531,7 +545,7 @@
             Leave a review
           </button>
 
-          <div class="backdrop" data-modal>
+          <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="modal-btn" type="button" data-modal-close>
                 <svg class="modal-btn-icon" width="28" height="28">
@@ -541,22 +555,39 @@
               <p class="modal-caption">
                 LEAVE A REVIEW ABOUT <span class="modal-caption-accent">OUR CHOCOLATE</span>
               </p>
-              <!-- <strong class="modal-caption">
-                LEAVE A REVIEW ABOUT <span class="modal-caption-accent">OUR CHOCOLATE</span>
-              </strong> -->
 
               <form class="modal-form" name="reviews-form">
                 <label class="modal-form-label" for="user-name">Name</label>
                 <div class="modal-form-field">
-                  <input class="modal-form-input" type="text" name="user-name" id="user-name" />
+                  <input
+                    class="modal-form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    required
+                    minlength="3"
+                    placeholder="Mark Jacobs"
+                  />
                   <svg class="modal-form-icon" width="24" height="24">
                     <use href="./images/sprite.svg#icon-user"></use>
                   </svg>
+                  <svg class="modal-form-validation" width="24" height="24">
+                    <use class="success" href="./images/sprite.svg#success"></use>
+                    <use class="error" href="./images/sprite.svg#error"></use>
+                  </svg>
+                  <span class="error-message">Username must contain at least 3 characters</span>
                 </div>
 
                 <label class="modal-form-label" for="user-email">Email</label>
                 <div class="modal-form-field">
-                  <input class="modal-form-input" type="email" name="user-email" id="user-email" />
+                  <input
+                    class="modal-form-input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    required
+                    placeholder="example@mail.com"
+                  />
                   <svg class="modal-form-icon" width="24" height="24">
                     <use href="./images/sprite.svg#icon-email"></use>
                   </svg>
@@ -564,7 +595,15 @@
 
                 <label class="modal-form-label" for="user-phone">Phone number</label>
                 <div class="modal-form-field">
-                  <input class="modal-form-input" type="tel" name="user-phone" id="user-phone" />
+                  <input
+                    class="modal-form-input"
+                    type="tel"
+                    name="user-phone"
+                    id="user-phone"
+                    minlength="12"
+                    maxlength="12"
+                    placeholder="+39 (099) 123-45-67"
+                  />
                   <svg class="modal-form-icon" width="24" height="24">
                     <use href="./images/sprite.svg#icon-phone"></use>
                   </svg>
@@ -577,13 +616,16 @@
                   id="user-comment"
                   rows="4"
                   placeholder="Enter text"
+                  required
+                  minlength="7"
                 ></textarea>
 
                 <label class="modal-form-agreement">
-                  <input type="checkbox" name="user-agreement" />
+                  <input class="visually-hidden" type="checkbox" name="user-agreement" />
+
                   <span class="modal-form-checkbox">
-                    <svg class="modal-form-checkbox-icon" width="20" height="20">
-                      <use href=""></use>
+                    <svg class="modal-form-checkbox-icon" width="10" height="10">
+                      <use href="./images/sprite.svg#icon-check"></use>
                     </svg>
                   </span>
                   <span class="modal-form-agreement-desc">
@@ -686,11 +728,17 @@
               <a class="footer-menu-link link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
+
+          <form class="footer-form" name="subscription-form">
+            <label class="footer-form-label">
+              <input class="footer-form-input" type="email" placeholder="Enter your email" />
+            </label>
+            <button class="footer-form-btn btn btn-accent" type="submit"> Subscribe </button>
+          </form>
         </div>
       </div>
     </footer>
 
     <script src="./js/modal.js" type="module"></script>
-    <!-- <script src="./js/form.js" type="module"></script> -->
   </body>
 </html>
