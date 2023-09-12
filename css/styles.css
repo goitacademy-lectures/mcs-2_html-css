@@ -26,6 +26,10 @@
   --items: 4;
 
   --trns-fast: 300ms ease;
+  /* Breakpoints */
+  --mob: 375px;
+  --tab: 768px;
+  --desk: 1px;
 }
 
 /**
@@ -148,15 +152,36 @@ img {
 .section-title-accent {
   color: var(--accent-cl);
 }
+/* Base styles for mobile devices */
 .container {
-  width: 1168px;
-  padding: 0 16px;
-  margin: 0 auto;
+  min-width: 320px;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+/* Styles for tablet devices */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+/* Styles for desktop devices */
+@media only screen and (min-width: 1168px) {
+  .container {
+    max-width: 1168px;
+  }
 }
 /**
-  |============================
-  | Card set
-  |============================
+|============================
+| Card set
+|============================
 */
 .card-set {
   display: flex;
@@ -394,9 +419,20 @@ img {
   | Ingridients styles
   |============================
 */
-.ingridients {
-  padding-top: 120px;
-  background-color: var(--light-bg);
+/* .ingridients {
+  display: none;
+} */
+@media only screen and (min-width: 1168px) {
+  .ingridients {
+    display: block;
+    padding-top: 120px;
+    background-color: var(--light-bg);
+  }
+}
+@media only screen and (max-width: 1167.98px) {
+  .ingridients {
+    display: none;
+  }
 }
 .ingridients-list {
   display: flex;
