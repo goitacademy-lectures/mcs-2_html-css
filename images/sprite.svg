@@ -41,8 +41,8 @@
     </symbol>
     <!-- Form icons -->
     <symbol id="icon-close" viewBox="0 0 28 28" fill="none">
-      <path d="M21 7L7 21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M7 7L21 21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M21 7L7 21"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M7 7L21 21"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
     <symbol id="icon-user" viewBox="0 0 24 24" fill="none">
       <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -63,6 +63,9 @@
     </symbol>
     <symbol id="success" viewBox="0 0 512 512">
       <path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z" fill="#00804b"/>
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 28 28" fill="none">
+      <path d="M3.5 14H24.5M3.5 7H24.5M3.5 21H24.5" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
   </defs>
 </svg>

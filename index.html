@@ -27,7 +27,7 @@
   </head>
   <body>
     <!-- Header -->
-    <!-- <header class="header" id="home">
+    <header class="header" id="home">
       <div class="header-container container">
         <nav class="header-nav">
           <a class="header-logo link" href="">
@@ -47,6 +47,16 @@
               <a class="header-nav-link link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
+          <button
+            class="header-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Menu open buton"
+          >
+            <svg class="header-btn-icon" width="28" height="28">
+              <use href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
         </nav>
         <ul class="header-socials list">
           <li class="header-socials-item">
@@ -90,10 +100,10 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- Hero section -->
-      <!-- <section class="hero" id="hero">
+      <section class="hero" id="hero">
         <div class="hero-container container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our&nbsp;finest ingredients for a moment of pure
@@ -112,11 +122,11 @@
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
       <!--  Benefits section -->
       <section class="benefits section" id="benefits">
         <div class="container">
-          <h2 class="section-title visually-hidden">Benefits of our chocolate</h2>
+          <h2 class="visually-hidden">Benefits of our chocolate</h2>
           <ul class="benefits-list list">
             <li class="benefits-item">
               <div class="benefits-thumb">
@@ -175,10 +185,11 @@
               </svg>
               <img
                 class="ingridients-list-img"
+                srcset="./images/ingridients/img-1.png 1x, ./images/ingridients/img-1@2x.png 2x"
                 src="./images/ingridients/img-1.png"
                 alt="Milk chocolate pieces"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
                 loading="lazy"
               />
               <h3 class="ingridients-list-caption">MILK CHOCOLATE</h3>
@@ -189,10 +200,11 @@
               </svg>
               <img
                 class="ingridients-list-img"
+                srcset="./images/ingridients/img-2.png 1x, ./images/ingridients/img-2@2x.png 2x"
                 src="./images/ingridients/img-2.png"
                 alt="Milk in bottle"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
                 loading="lazy"
               />
               <h3 class="ingridients-list-caption">MILK</h3>
@@ -203,10 +215,11 @@
               </svg>
               <img
                 class="ingridients-list-img"
+                srcset="./images/ingridients/img-3.png 1x, ./images/ingridients/img-3@2x.png 2x"
                 src="./images/ingridients/img-3.png"
                 alt="Nuts"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
                 loading="lazy"
               />
               <h3 class="ingridients-list-caption">NUTS</h3>
@@ -217,10 +230,11 @@
               </svg>
               <img
                 class="ingridients-list-img"
+                srcset="./images/ingridients/img-4.png 1x, ./images/ingridients/img-4@2x.png 2x"
                 src="./images/ingridients/img-4.png"
                 alt="Semi-sweet chocolate drops"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
                 loading="lazy"
               />
               <h3 class="ingridients-list-caption">SEMI - SWEET CHOCOLATE</h3>
@@ -231,10 +245,11 @@
               </svg>
               <img
                 class="ingridients-list-img"
+                srcset="./images/ingridients/img-5.png 1x, ./images/ingridients/img-5@2x.png 2x"
                 src="./images/ingridients/img-5.png"
                 alt="Cacao beans"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
                 loading="lazy"
               />
               <h3 class="ingridients-list-caption">CACAO</h3>
@@ -245,10 +260,11 @@
               </svg>
               <img
                 class="ingridients-list-img"
+                srcset="./images/ingridients/img-6.png 1x, ./images/ingridients/img-6@2x.png 2x"
                 src="./images/ingridients/img-6.png"
                 alt="Fresh raspberry"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
                 loading="lazy"
               />
               <h3 class="ingridients-list-caption">RASPBERRY</h3>
@@ -259,10 +275,11 @@
               </svg>
               <img
                 class="ingridients-list-img"
+                srcset="./images/ingridients/img-7.png 1x, ./images/ingridients/img-7@2x.png 2x"
                 src="./images/ingridients/img-7.png"
                 alt="Coconut oil"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
                 loading="lazy"
               />
               <h3 class="ingridients-list-caption">COCONUT OIL</h3>
@@ -746,6 +763,115 @@
       </div>
     </footer> -->
 
-    <script src="./js/modal.js" type="module"></script>
+    <!-- Mobile menu -->
+    <div class="mobile-backdrop js-menu-container" id="mobile-menu">
+      <div class="mobile-container">
+        <button
+          class="mobile-menu-btn js-close-menu"
+          aria-label="Menu close button"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="28" height="28">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu list">
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link link">Home</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link link">How it’s made?</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link link">Chocolate is loved</a>
+          </li>
+        </ul>
+        <ul class="mobile-socials list">
+          <li class="header-socials-item">
+            <a
+              class="header-socials-link link"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook link"
+            >
+              <svg class="header-socials-icon" width="24" height="24">
+                <use href="./images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-socials-item">
+            <a
+              class="header-socials-link link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram link"
+            >
+              <svg class="header-socials-icon" width="24" height="24">
+                <use href="./images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-socials-item">
+            <a
+              class="header-socials-link link"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter link"
+            >
+              <svg class="header-socials-icon" width="24" height="24">
+                <use href="./images/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Picture -->
+    <picture>
+      <source
+        media="(min-width: 1168px)"
+        srcset="./images/hero/hero-bg_desk.avif 1x, ./images/hero/hero-bg_desk@2x.avif 2x"
+        type="image/avif"
+      />
+      <source
+        media="(min-width: 1168px)"
+        srcset="./images/hero/hero-bg_desk.webp 1x, ./images/hero/hero-bg_desk@2x.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 1168px)"
+        srcset="./images/hero/hero-bg_desk.jpg 1x, ./images/hero/hero-bg_desk@2x.jpg 2x"
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/hero/hero-bg_tab.avif 1x, ./images/hero/hero-bg_tab@2x.avif 2x"
+        type="image/avif"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/hero/hero-bg_tab.webp 1x, ./images/hero/hero-bg_tab@2x.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/hero/hero-bg_tab.jpg 1x, ./images/hero/hero-bg_tab@2x.jpg 2x"
+        type="image/jpg"
+      />
+      <img src="./images/hero/hero-bg_mob.jpg" alt="qwe" />
+    </picture>
+
+    <!-- <script src="./js/modal.js" type="module"></script> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
